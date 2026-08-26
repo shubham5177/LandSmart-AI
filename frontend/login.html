@@ -1,0 +1,23 @@
+Purpose: Allow users to log into the system.
+
+Fields:
+
+Email
+Password
+Role
+
+Roles:
+
+Citizen
+Government Officer
+Admin
+
+Flow:
+
+Login form → auth.js → Flask /api/login → Database → Login response
+
+Successful login:
+
+Citizen → dashboard.html
+Officer → officer dashboard
+Admin → admin dashboard
